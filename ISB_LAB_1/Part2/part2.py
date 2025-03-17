@@ -47,7 +47,7 @@ decrypted_text = ''
 for char in encrypted_text:
     decrypted_text += substitution.get(char, char)  # Если символа нет в словаре, оставляем как есть
 
-# Записываем дешифрованный текст
+# Записываем предварительно дешифрованный текст
 with open('preliminary_code.txt', 'w', encoding='utf-8') as f:
     f.write(decrypted_text)
 
